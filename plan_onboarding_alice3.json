@@ -1,0 +1,277 @@
+{
+    "analyse_preliminaire": {
+        "themes_majeurs_identifies": [
+            "Diagnostic incidents",
+            "Relation client",
+            "Fondamentaux FAI"
+        ],
+        "justification_pedagogique": "Formation modulaire progressive, du concept de base au diagnostic technique et à la gestion client. L'objectif est de rendre les consultants autonomes et efficaces sur le terrain."
+    },
+    "schema_version": "1.0",
+    "type": "lms_training_plan",
+    "language": "fr-FR",
+    "title": "Formation Consultant Support FAI - Fondamentaux et Techniques",
+    "context": {
+        "delivery_mode": "blended_learning",
+        "target_audience": [
+            "Nouveaux consultants support",
+            "Superviseurs débutants",
+            "Agents back-office technique",
+            "Formateurs support",
+            "Superviseurs de centre de contacts"
+        ],
+        "global_objective": "Rendre le consultant autonome, méthodique et fiable dans le support FAI niveau 1/2.",
+        "estimated_total_duration_hours": "18",
+        "recommended_calendar": "3 jours"
+    },
+    "source_documents": [
+        "01_formation_consultant_support_fai_fondamentaux.pdf",
+        "02_formation_consultant_support_fai_diagnostic_incidents.pdf",
+        "03_formation_consultant_support_fai_relation_client_procedures.pdf"
+    ],
+    "lms_configuration": {
+        "course_format": "modulaire",
+        "access_mode": "asynchrone",
+        "tracking": {
+            "completion_required": true,
+            "completion_rule": "Tous les modules doivent être complétés avec un score minimal de 80% aux quiz.",
+            "recommended_standards": [
+                "SCORM 1.2",
+                "xAPI"
+            ],
+            "data_to_track": [
+                "temps passé",
+                "score aux quiz",
+                "résultats aux jeux de rôle",
+                "nombre de tentatives",
+                "achèvement des modules"
+            ]
+        },
+        "learner_support": [
+            "Forum de discussion",
+            "Support par email",
+            "Sessions de questions/réponses en direct"
+        ],
+        "accessibility_and_usability": [
+            "Sous-titres pour les vidéos",
+            "Compatibilité avec les lecteurs d'écran",
+            "Navigation intuitive",
+            "Contenu adaptable aux mobiles"
+        ]
+    },
+    "course_structure": [
+        {
+            "module_id": "M1",
+            "title": "Fondamentaux FAI",
+            "duration_minutes": "360",
+            "order": 1,
+            "learning_objectives": [
+                "Expliquer le rôle d'un FAI et les principaux services fournis.",
+                "Identifier les éléments de la chaîne technique (ligne, box, ONT, Wi-Fi, LAN, DNS, DHCP, routage).",
+                "Utiliser le vocabulaire de base pour dialoguer avec les clients, le NOC et les équipes terrain.",
+                "Comprendre le cycle de vie d'un ticket et les responsabilités du support niveau 1."
+            ],
+            "prerequisites": [
+                "Savoir utiliser un ordinateur et un navigateur web.",
+                "Être à l'aise avec une conversation client par téléphone, chat ou email.",
+                "Connaitre les bases de la navigation Internet."
+            ],
+            "lms_units": [
+                {
+                    "unit_id": "M1-L1",
+                    "title": "Rôle du FAI et chaîne de service",
+                    "type": "interactive_page",
+                    "duration_minutes": "60",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M1-L2",
+                    "title": "Technologies d'accès et équipements",
+                    "type": "video",
+                    "duration_minutes": "90",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M1-L3",
+                    "title": "Notions réseau essentielles",
+                    "type": "interactive_page",
+                    "duration_minutes": "60",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M1-L4",
+                    "title": "Organisation support et ticketing",
+                    "type": "interactive_page",
+                    "duration_minutes": "60",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M1-L5",
+                    "title": "Quiz de validation - Fondamentaux FAI",
+                    "type": "quiz",
+                    "duration_minutes": "30",
+                    "completion": "score_minimum_80"
+                }
+            ],
+            "deliverable": "Schéma mental clair du parcours client.",
+            "assessment": {
+                "type": "quiz",
+                "passing_score_percent": 80,
+                "attempts_allowed": 3,
+                "manual_review_required": false,
+                "reviewer_role": null,
+                "remediation": "Consulter à nouveau les modules et poser des questions au formateur.",
+                "criteria": []
+            }
+        },
+        {
+            "module_id": "M2",
+            "title": "Diagnostic Incidents",
+            "duration_minutes": "420",
+            "order": 2,
+            "learning_objectives": [
+                "Appliquer une méthode de diagnostic en entonnoir.",
+                "Utiliser des questions de qualification et des tests simples pour isoler la panne.",
+                "Reconnaitre les cas resolvables au support et ceux qui doivent être escalades.",
+                "Documenter une escalation claire, complète et exploitable."
+            ],
+            "prerequisites": [
+                "Avoir suivi le module 1 ou connaitre les bases IP, Wi-Fi, box/ONT et ticketing."
+            ],
+            "lms_units": [
+                {
+                    "unit_id": "M2-L1",
+                    "title": "Méthode de diagnostic",
+                    "type": "interactive_page",
+                    "duration_minutes": "70",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M2-L2",
+                    "title": "Pannes Internet et synchronisation",
+                    "type": "video",
+                    "duration_minutes": "100",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M2-L3",
+                    "title": "Lenteurs et Wi-Fi",
+                    "type": "interactive_page",
+                    "duration_minutes": "80",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M2-L4",
+                    "title": "VoIP et TV",
+                    "type": "interactive_page",
+                    "duration_minutes": "70",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M2-L5",
+                    "title": "Quiz de validation - Diagnostic Incidents",
+                    "type": "quiz",
+                    "duration_minutes": "100",
+                    "completion": "score_minimum_80"
+                }
+            ],
+            "deliverable": "Arbre de décision terrain pour le diagnostic des pannes.",
+            "assessment": {
+                "type": "quiz",
+                "passing_score_percent": 80,
+                "attempts_allowed": 3,
+                "manual_review_required": false,
+                "reviewer_role": null,
+                "remediation": "Consulter à nouveau les modules et poser des questions au formateur.",
+                "criteria": []
+            }
+        },
+        {
+            "module_id": "M3",
+            "title": "Relation Client et Procédures",
+            "duration_minutes": "360",
+            "order": 3,
+            "learning_objectives": [
+                "Structurer un appel ou un chat support avec une posture professionnelle et rassurante.",
+                "Utiliser des scripts adaptés sans paraître robotique.",
+                "Gérer les clients inquiets, pressés ou mécontents avec empathie et fermeté.",
+                "Produire une documentation de dossier claire, neutre et exploitable.",
+                "Comprendre les indicateurs qualité."
+            ],
+            "prerequisites": [
+                "Connaitre les bases du support FAI et les procédures de diagnostic standard."
+            ],
+            "lms_units": [
+                {
+                    "unit_id": "M3-L1",
+                    "title": "Parcours conversationnel",
+                    "type": "interactive_page",
+                    "duration_minutes": "60",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M3-L2",
+                    "title": "Questionnement et reformulation",
+                    "type": "video",
+                    "duration_minutes": "70",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M3-L3",
+                    "title": "Gestion des situations difficiles",
+                    "type": "interactive_page",
+                    "duration_minutes": "80",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M3-L4",
+                    "title": "Ticketing et qualité",
+                    "type": "interactive_page",
+                    "duration_minutes": "70",
+                    "completion": "viewed"
+                },
+                {
+                    "unit_id": "M3-L5",
+                    "title": "Quiz de validation - Relation Client et Procédures",
+                    "type": "quiz",
+                    "duration_minutes": "80",
+                    "completion": "score_minimum_80"
+                }
+            ],
+            "deliverable": "Capacité à gérer efficacement une interaction client tout en respectant les procédures.",
+            "assessment": {
+                "type": "quiz",
+                "passing_score_percent": 80,
+                "attempts_allowed": 3,
+                "manual_review_required": false,
+                "reviewer_role": null,
+                "remediation": "Consulter à nouveau les modules et poser des questions au formateur.",
+                "criteria": []
+            }
+        }
+    ],
+    "global_completion_rules": {
+        "required_modules": [
+            "M1",
+            "M2",
+            "M3"
+        ],
+        "minimum_quiz_score_percent": 80,
+        "assignments_required": false,
+        "manual_validation_required": false,
+        "certificate_enabled": true,
+        "certificate_title": "Certificat de Consultant Support FAI - Fondamentaux et Techniques"
+    },
+    "recommended_lms_tags": [
+        "support FAI",
+        "diagnostic réseau",
+        "relation client",
+        "télécommunications",
+        "fibre optique",
+        "troubleshooting",
+        "service client",
+        "IP",
+        "DHCP",
+        "DNS"
+    ]
+}
