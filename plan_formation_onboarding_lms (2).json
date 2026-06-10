@@ -1,0 +1,441 @@
+{
+  "schema_version": "1.0",
+  "type": "lms_training_plan",
+  "language": "fr-FR",
+  "title": "Onboarding Consultant Support FAI",
+  "context": {
+    "delivery_mode": "online_lms",
+    "target_audience": [
+      "Nouveaux consultants support FAI",
+      "Agents support niveau 1",
+      "Agents back-office technique débutants",
+      "Superviseurs ou référents qualité débutants"
+    ],
+    "global_objective": "Rendre le consultant autonome, méthodique et fiable dans le support FAI niveau 1/2.",
+    "estimated_total_duration_hours": 28,
+    "recommended_calendar": "4 jours équivalents, réalisables en parcours 100% LMS avec activités synchrones ou asynchrones.",
+    "source_documents": [
+      "01_formation_consultant_support_fai_fondamentaux.pdf",
+      "02_formation_consultant_support_fai_diagnostic_incidents.pdf",
+      "03_formation_consultant_support_fai_relation_client_procedures.pdf"
+    ]
+  },
+  "lms_configuration": {
+    "course_format": "modulaire",
+    "access_mode": "asynchrone avec possibilités de classes virtuelles",
+    "tracking": {
+      "completion_required": true,
+      "completion_rule": "Terminer toutes les leçons, obtenir au moins 80% aux quiz, réussir l'évaluation finale et soumettre les activités de mise en situation.",
+      "recommended_standards": [
+        "SCORM 1.2",
+        "SCORM 2004",
+        "xAPI"
+      ],
+      "data_to_track": [
+        "temps passé par module",
+        "progression par leçon",
+        "score aux quiz",
+        "nombre de tentatives",
+        "réponses aux cas pratiques",
+        "validation formateur ou superviseur"
+      ]
+    },
+    "learner_support": [
+      "Forum de questions/réponses",
+      "FAQ technique",
+      "Fiches mémo téléchargeables",
+      "Sessions de coaching ou classe virtuelle",
+      "Feedback formateur sur les tickets rédigés"
+    ],
+    "accessibility_and_usability": [
+      "Découper les contenus en leçons courtes de 5 à 15 minutes",
+      "Ajouter des sous-titres aux vidéos",
+      "Prévoir une version texte des scripts audio",
+      "Utiliser des quiz courts après chaque séquence",
+      "Permettre la reprise du parcours là où l'apprenant s'est arrêté"
+    ]
+  },
+  "course_structure": [
+    {
+      "module_id": "M0",
+      "title": "Accueil et prise en main LMS",
+      "duration_minutes": 30,
+      "order": 0,
+      "learning_objectives": [
+        "Comprendre les objectifs du parcours d'onboarding",
+        "Savoir naviguer dans la plateforme LMS",
+        "Connaître les règles de validation"
+      ],
+      "lms_units": [
+        {
+          "unit_id": "M0-L1",
+          "title": "Bienvenue dans le parcours",
+          "type": "page_interactive",
+          "duration_minutes": 10,
+          "completion": "viewed"
+        },
+        {
+          "unit_id": "M0-L2",
+          "title": "Fonctionnement de la LMS et critères de réussite",
+          "type": "page_interactive",
+          "duration_minutes": 10,
+          "completion": "viewed"
+        },
+        {
+          "unit_id": "M0-Q1",
+          "title": "Quiz de prise en main",
+          "type": "quiz",
+          "duration_minutes": 10,
+          "completion": "score_minimum_80"
+        }
+      ],
+      "deliverable": "Apprenant prêt à démarrer le parcours"
+    },
+    {
+      "module_id": "M1",
+      "title": "Fondamentaux du support FAI",
+      "duration_minutes": 390,
+      "order": 1,
+      "learning_objectives": [
+        "Expliquer le rôle d'un FAI et les principaux services fournis au client",
+        "Identifier les éléments de la chaîne technique : ligne, box, ONT, Wi-Fi, LAN, DNS, DHCP et routage",
+        "Utiliser le vocabulaire de base pour dialoguer avec les clients, le NOC et les équipes terrain",
+        "Comprendre le cycle de vie d'un ticket et les responsabilités du support niveau 1"
+      ],
+      "prerequisites": [
+        "Savoir utiliser un ordinateur et un navigateur web",
+        "Être à l'aise avec une conversation client par téléphone, chat ou email",
+        "Connaître les bases de la navigation Internet"
+      ],
+      "lms_units": [
+        {
+          "unit_id": "M1-L1",
+          "title": "Rôle du FAI et chaîne de service",
+          "type": "video_or_interactive_page",
+          "duration_minutes": 45,
+          "completion": "viewed"
+        },
+        {
+          "unit_id": "M1-L2",
+          "title": "Technologies d'accès et équipements client",
+          "type": "interactive_page_with_hotspots",
+          "duration_minutes": 60,
+          "completion": "viewed"
+        },
+        {
+          "unit_id": "M1-L3",
+          "title": "Notions réseau essentielles",
+          "type": "microlearning",
+          "duration_minutes": 60,
+          "completion": "viewed"
+        },
+        {
+          "unit_id": "M1-L4",
+          "title": "Cycle de vie d'une demande support",
+          "type": "scenario_branching",
+          "duration_minutes": 60,
+          "completion": "scenario_completed"
+        },
+        {
+          "unit_id": "M1-A1",
+          "title": "Atelier : qualifier 3 situations client",
+          "type": "assignment",
+          "duration_minutes": 90,
+          "completion": "submitted"
+        },
+        {
+          "unit_id": "M1-Q1",
+          "title": "Quiz de validation des fondamentaux",
+          "type": "quiz",
+          "duration_minutes": 30,
+          "completion": "score_minimum_80"
+        },
+        {
+          "unit_id": "M1-R1",
+          "title": "Fiche mémo : vocabulaire FAI et équipements",
+          "type": "downloadable_resource",
+          "duration_minutes": 15,
+          "completion": "downloaded_or_viewed"
+        },
+        {
+          "unit_id": "M1-S1",
+          "title": "Synthèse du module",
+          "type": "summary_page",
+          "duration_minutes": 30,
+          "completion": "viewed"
+        }
+      ],
+      "deliverable": "Schéma mental clair du parcours client, identification des équipements et vocabulaire de base maîtrisé",
+      "assessment": {
+        "type": "quiz_plus_case_study",
+        "passing_score_percent": 80,
+        "attempts_allowed": 3,
+        "remediation": "Revoir les leçons associées aux mauvaises réponses avant une nouvelle tentative"
+      }
+    },
+    {
+      "module_id": "M2",
+      "title": "Diagnostic et résolution des incidents",
+      "duration_minutes": 660,
+      "order": 2,
+      "learning_objectives": [
+        "Appliquer une méthode de diagnostic en entonnoir, du symptôme client vers la cause probable",
+        "Utiliser des questions de qualification et des tests simples pour isoler la panne",
+        "Reconnaître les cas résolvables au support et ceux qui doivent être escaladés",
+        "Documenter une escalade claire, complète et exploitable par les équipes techniques"
+      ],
+      "prerequisites": [
+        "Avoir validé le module M1 ou connaître les bases IP, Wi-Fi, box/ONT et ticketing",
+        "Disposer des accès aux outils internes de consultation client et supervision, si applicable"
+      ],
+      "lms_units": [
+        {
+          "unit_id": "M2-L1",
+          "title": "Méthode générale de diagnostic",
+          "type": "interactive_page",
+          "duration_minutes": 60,
+          "completion": "viewed"
+        },
+        {
+          "unit_id": "M2-L2",
+          "title": "Arbre de décision : absence de connexion",
+          "type": "branching_scenario",
+          "duration_minutes": 90,
+          "completion": "scenario_completed"
+        },
+        {
+          "unit_id": "M2-L3",
+          "title": "Diagnostic lenteur et instabilité",
+          "type": "interactive_case",
+          "duration_minutes": 90,
+          "completion": "case_completed"
+        },
+        {
+          "unit_id": "M2-L4",
+          "title": "Outils et commandes utiles : ping, traceroute, speedtest, supervision",
+          "type": "simulation",
+          "duration_minutes": 90,
+          "completion": "simulation_completed"
+        },
+        {
+          "unit_id": "M2-L5",
+          "title": "Pannes VoIP et TV",
+          "type": "interactive_page",
+          "duration_minutes": 60,
+          "completion": "viewed"
+        },
+        {
+          "unit_id": "M2-L6",
+          "title": "Escalade : quand et comment",
+          "type": "guided_assignment",
+          "duration_minutes": 90,
+          "completion": "submitted"
+        },
+        {
+          "unit_id": "M2-A1",
+          "title": "Cas pratiques : coupure fibre, lenteur Wi-Fi, VoIP seule KO",
+          "type": "assignment",
+          "duration_minutes": 120,
+          "completion": "submitted_and_reviewed"
+        },
+        {
+          "unit_id": "M2-Q1",
+          "title": "Quiz de validation diagnostic",
+          "type": "quiz",
+          "duration_minutes": 30,
+          "completion": "score_minimum_80"
+        },
+        {
+          "unit_id": "M2-R1",
+          "title": "Checklist diagnostic avant clôture ou escalade",
+          "type": "downloadable_resource",
+          "duration_minutes": 15,
+          "completion": "downloaded_or_viewed"
+        },
+        {
+          "unit_id": "M2-S1",
+          "title": "Synthèse du module",
+          "type": "summary_page",
+          "duration_minutes": 15,
+          "completion": "viewed"
+        }
+      ],
+      "deliverable": "Arbre de décision maîtrisé, diagnostic structuré, tickets complets et scénarios résolus",
+      "assessment": {
+        "type": "quiz_plus_ticket_writing",
+        "passing_score_percent": 80,
+        "attempts_allowed": 3,
+        "manual_review_required": true,
+        "reviewer_role": "formateur ou superviseur"
+      }
+    },
+    {
+      "module_id": "M3",
+      "title": "Relation client et excellence opérationnelle",
+      "duration_minutes": 390,
+      "order": 3,
+      "learning_objectives": [
+        "Structurer un appel ou un chat support avec une posture professionnelle et rassurante",
+        "Utiliser des scripts adaptés sans paraître robotique",
+        "Gérer les clients inquiets, pressés ou mécontents avec empathie et fermeté",
+        "Produire une documentation de dossier claire, neutre et exploitable",
+        "Comprendre les indicateurs qualité : satisfaction, résolution au premier contact, délai et conformité"
+      ],
+      "prerequisites": [
+        "Connaître les bases du support FAI et les procédures de diagnostic standard",
+        "Avoir accès aux consignes internes de confidentialité, authentification et escalade"
+      ],
+      "lms_units": [
+        {
+          "unit_id": "M3-L1",
+          "title": "Trame d'interaction support",
+          "type": "video_or_interactive_page",
+          "duration_minutes": 45,
+          "completion": "viewed"
+        },
+        {
+          "unit_id": "M3-L2",
+          "title": "Techniques de questionnement et reformulation",
+          "type": "interactive_page",
+          "duration_minutes": 60,
+          "completion": "viewed"
+        },
+        {
+          "unit_id": "M3-L3",
+          "title": "Scripts utiles en support FAI",
+          "type": "dialogue_simulation",
+          "duration_minutes": 60,
+          "completion": "simulation_completed"
+        },
+        {
+          "unit_id": "M3-L4",
+          "title": "Désescalade et limites",
+          "type": "branching_scenario",
+          "duration_minutes": 75,
+          "completion": "scenario_completed"
+        },
+        {
+          "unit_id": "M3-L5",
+          "title": "Qualité de ticket et notes dossier",
+          "type": "guided_assignment",
+          "duration_minutes": 60,
+          "completion": "submitted"
+        },
+        {
+          "unit_id": "M3-L6",
+          "title": "Indicateurs qualité : FCR, AHT/DMT, CSAT, SLA, qualité dossier",
+          "type": "microlearning",
+          "duration_minutes": 30,
+          "completion": "viewed"
+        },
+        {
+          "unit_id": "M3-A1",
+          "title": "Jeux de rôle en ligne : client pressé, client technique, client confus",
+          "type": "virtual_class_or_recorded_assignment",
+          "duration_minutes": 90,
+          "completion": "submitted_and_reviewed"
+        },
+        {
+          "unit_id": "M3-Q1",
+          "title": "Quiz de validation relation client",
+          "type": "quiz",
+          "duration_minutes": 30,
+          "completion": "score_minimum_80"
+        },
+        {
+          "unit_id": "M3-R1",
+          "title": "Grille d'auto-évaluation consultant",
+          "type": "downloadable_resource",
+          "duration_minutes": 15,
+          "completion": "downloaded_or_viewed"
+        }
+      ],
+      "deliverable": "Trame d'appel opérationnelle, scripts de désescalade maîtrisés, notes de dossier standardisées",
+      "assessment": {
+        "type": "quiz_plus_role_play_plus_ticket_audit",
+        "passing_score_percent": 80,
+        "attempts_allowed": 3,
+        "manual_review_required": true,
+        "reviewer_role": "formateur, qualité ou superviseur"
+      }
+    },
+    {
+      "module_id": "M4",
+      "title": "Évaluation finale et certification interne",
+      "duration_minutes": 180,
+      "order": 4,
+      "learning_objectives": [
+        "Valider la capacité à prendre en charge une demande client de bout en bout",
+        "Valider la maîtrise du diagnostic et de l'escalade",
+        "Valider la qualité de communication et de documentation"
+      ],
+      "lms_units": [
+        {
+          "unit_id": "M4-E1",
+          "title": "Quiz final technique et relation client",
+          "type": "quiz",
+          "duration_minutes": 45,
+          "completion": "score_minimum_80"
+        },
+        {
+          "unit_id": "M4-E2",
+          "title": "Cas final : coupure Internet avec escalade",
+          "type": "scenario_branching",
+          "duration_minutes": 60,
+          "completion": "scenario_completed"
+        },
+        {
+          "unit_id": "M4-E3",
+          "title": "Rédaction du ticket final",
+          "type": "assignment",
+          "duration_minutes": 45,
+          "completion": "submitted_and_reviewed"
+        },
+        {
+          "unit_id": "M4-E4",
+          "title": "Auto-évaluation et feedback final",
+          "type": "survey",
+          "duration_minutes": 30,
+          "completion": "submitted"
+        }
+      ],
+      "deliverable": "Certification interne ou validation d'habilitation à traiter les demandes support FAI",
+      "assessment": {
+        "type": "final_certification",
+        "passing_score_percent": 80,
+        "manual_review_required": true,
+        "criteria": [
+          "Qualification complète",
+          "Diagnostic structuré",
+          "Communication professionnelle",
+          "Escalade pertinente",
+          "Ticket factuel et exploitable",
+          "Clôture ou prochaine étape claire"
+        ]
+      }
+    }
+  ],
+  "global_completion_rules": {
+    "required_modules": [
+      "M0",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minimum_quiz_score_percent": 80,
+    "assignments_required": true,
+    "manual_validation_required": true,
+    "certificate_enabled": true,
+    "certificate_title": "Validation onboarding Consultant Support FAI"
+  },
+  "recommended_lms_tags": [
+    "onboarding",
+    "support-fai",
+    "niveau-1",
+    "diagnostic",
+    "relation-client",
+    "ticketing",
+    "qualité"
+  ]
+}
